@@ -10,5 +10,6 @@
     "node_name_blacklist":[],
     "node_protocol_blacklist":[],
     "node_delay_limit": 1000,
-    "v2raya_config": "/home/v2raya/config.json"
+    "v2raya_config": "/home/v2raya/config.json",
+    "v2raya_ip_addr": "localhost"
 }

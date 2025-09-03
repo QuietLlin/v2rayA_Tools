@@ -19,6 +19,10 @@ def load_config():
 
 def get_container_ip(container_name):
     '''获取容器的IP地址'''
+    global CONFIG
+    if CONFIG['v2raya_ip_addr'] is not None:
+        if  len(CONFIG['v2raya_ip_addr']) > 0:
+            return CONFIG['v2raya_ip_addr']
     try:
         # 获取容器的详细信息
         result = subprocess.run(
